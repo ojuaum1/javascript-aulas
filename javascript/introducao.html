@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('pagina carregada com sucesso')">
+    <h1>introducao ao js </h1>
+<input type="text" placeholder="digite seu nome" id="nome">
+    <button onclick="alert('bom dia pessoal')">bom dia</button>
+    <button onclick="saudacao()">saudacao</button>
+
+
+
+    <script>
+        function saudacao()
+        {
+            
+           var nome = document.getElementById("nome").value;
+           alert(`Bom dia ${nome} !`);
+
+           //console.log(nome.placeholder)
+           //console.log(nome.value)
+
+           
+        }
+    </script>
+</body>
+</html>
