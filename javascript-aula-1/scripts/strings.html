@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>gonadotrofina</title>
+</head>
+<body>
+    
+<form onsubmit="NickName()">  
+  <fieldset> 
+    
+        <label for="nome">nome</label>
+        <input type="text" id="nome" placeholder="digite seu nome">
+        <br><br>
+        <label for="n1">nickname</label>
+        <input type="text" id="nickname" placeholder="digite seu nome">
+
+
+        <button type="replace">substituir</button>
+
+        <p id="res-nick">??</p>
+     </fieldset>
+ </form>
+
+    
+         <script>
+       function saudacao(){
+         let nome = document.getElementById("nome").value
+        let nickname = document.getElementById("Nickname").value
+
+        document.getElementById('res-nick').innerHTML = nome.replace(nome,'ola,{nick}')
+       }
+       
+    </script>
+  
+</body>
+</html>
