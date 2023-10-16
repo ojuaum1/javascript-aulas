@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objeto literal
+        let joao = {
+            nome : "joao",
+            sobrenome:"oliveira santos",
+            idade: 19
+        };
+
+        joao.cpf = '123456789'
+
+        //objeto tradicional
+        let carlos = new Object();
+        carlos.nome = 'carlos';
+        carlos.sobrenome = 'roque';
+        carlos.cpf = '123456789'
+
+        console.log(joao);
+        console.log(carlos);
+
+
+        let pessoas =[]
+    pessoas.push(carlos);
+    pessoas.push(joao);
+    
+    pessoas.forEach(function(p){
+        console.log(`nome:${p.nome}`);
+    })
+
+    </script>
+</body>
+</html>
